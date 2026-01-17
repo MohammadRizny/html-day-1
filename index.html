@@ -1,1 +1,168 @@
-day 1 : semantic html structure
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Rizny">
+  <meta name="description" content="this all about me and about my full stack web development journey">
+  <title>My Full Stack Web Development Journey</title>
+</head>
+
+<body>
+  <header>
+    <h1>Mohammad Rizny</h1>
+    <p>Aspiring Full Stack Developer</p>
+    <nav>
+      <ul>
+        <li><a href="#about-me">About Me</a></li>
+        <li><a href="#journey">Journey</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+
+    <section id="about-me">
+      <h2>About me</h2>
+      <p>Aspiring Full-Stack Developer with a strong passion for building responsive, user-friendly web applications.
+        Currently learning and practicing front-end and back-end technologies including HTML, CSS, JavaScript, and
+        modern frameworks, with a focus on writing clean, efficient, and scalable code. Dedicated to continuous
+        learning, problem-solving, and turning ideas into real-world digital solutions. Actively working toward
+        becoming
+        a skilled full-stack professional capable of handling complete web application development from design to
+        deployment.</p>
+    </section>
+    <section id="journey">
+      <h2>My Full Stack Web Development Journey</h2>
+      <p>My journey into full stack web development began with a curiosity about how websites and web applications
+        functioned. I started by learning the basics of HTML and CSS, which laid the foundation for understanding web
+        structure and design. As I progressed, I delved into JavaScript to add interactivity to my projects.
+
+        Eager to expand my skill set, I explored front-end frameworks like React and Vue.js, which allowed me to build
+        dynamic user interfaces more efficiently. Simultaneously, I began learning back-end technologies such as
+        Node.js
+        and Express.js to understand server-side development and database management.
+
+        Throughout this journey, I've worked on various projects that challenged me to apply my knowledge in
+        real-world
+        scenarios. From creating simple portfolio websites to developing full-fledged web applications, each project
+        has
+        contributed to my growth as a developer.
+
+        I'm committed to continuous learning and staying updated with the latest industry trends and best practices.
+        My goal is to become a proficient full stack developer capable of delivering high-quality web solutions that
+        meet user needs and business objectives.</p>
+    </section>
+
+    <aside>
+      <details>
+        <summary><strong>Why Am I learning full stack development?</strong></summary>
+        <p>I am learning full-stack development with discipline because I believe consistency, structure, and daily
+          practice are the foundations of real skill. Full-stack development allows me to understand how complete
+          web
+          applications work—from designing user interfaces to managing servers, databases, and application logic. By
+          following a disciplined learning routine, I am building strong problem-solving abilities, writing clean
+          and
+          efficient code, and developing the mindset of a professional developer. This approach helps me stay
+          focused,
+          overcome challenges, and continuously improve, with the long-term goal of becoming a reliable full-stack
+          developer who can create scalable, real-world solutions.</p>
+      </details>
+    </aside>
+
+
+    <section id="contact">
+      <h2>Contact Me</h2>
+      <p>If you'd like to get in touch, feel free to reach out via email at rizy0008999@email.com. I'm always open to
+        discussing new opportunities, collaborations, or simply connecting with fellow developers and tech
+        enthusiasts.</p>
+      <p>I like to hear from you.</p>
+      <form action="https://httpbin.org/get" method="get">
+        <fieldset>
+          <legend>Your information</legend>
+          <label for="firstname">First Name:</label>
+          <input type="text" id="firstname" name="firstname" placeholder="Sosi" autocomplete="on" required>
+          <br><br>
+          <label for="lastname">Last Name:</label>
+          <input type="text" id="lastname" name="lastname" placeholder="Khan" autocomplete="on" required>
+          <br><br>
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" placeholder="example@email.com" required>
+          <br><br>
+          <label for="password">Password:</label>
+          <input type="password" id="password" name="password" placeholder="Your Secret" required>
+          <br><br>
+          <label for="phone">Phone Number:</label>
+          <input type="tel" id="phone" name="phone" placeholder="5555555555" pattern="[10]{3}{3}{4}" required>
+          <br>
+          <label for="decade">Favorite Decade:</label>
+          <input type="number" id="decade" name="decade" min="1970" max="2030" step="10" value="1990" required>
+          <br>
+          <label for="coffee">Favorite Coffee:</label>
+          <select id="coffee" name="coffee">
+            <optgroup label="Coffees">
+              <option value="regularcoffee">Regular Coffee</option>
+              <option value="icedcoffee">Iced Coffee</option>
+            </optgroup>
+            <optgroup label="Espresso Drinks">
+              <option value="cappucinno" selected>Cappucinno</option>
+              <option value="latte">Latte</option>
+              <option value="americano">Americano</option>
+            </optgroup>
+            <option value="other-coffees">Other</option>
+          </select>
+        </fieldset>
+        <br>
+        <fieldset>
+          <legend>What is your favorite food?</legend>
+          <input type="radio" id="tacos" name="food" value="tacos">
+          <label for="tacos">Tacos</label>
+          <br>
+          <input type="radio" id="pizza" name="food" value="pizza">
+          <label for="pizza">Pizza</label>
+          <br>
+          <input type="radio" id="rice" name="food" value="rice">
+          <label for="rice">Rice</label>
+          <br>
+          <input type="radio" id="burger" name="food" value="burger">
+          <label for="burger">Burger</label>
+          <br>
+          <input type="radio" id="other-foods" name="food" value="other-foods">
+          <label for="other-foods">Other</label>
+        </fieldset>
+        <br>
+        <fieldset>
+          <legend>What is your favorite pets?</legend>
+          <input type="checkbox" id="dog" name="pets" value="dog">
+          <label for="dog">Dog</label>
+          <br>
+          <input type="checkbox" id="cat" name="pets" value="cat">
+          <label for="cat">Cat</label>
+          <br>
+          <input type="checkbox" id="fish" name="pets" value="fish">
+          <label for="fish">Fish</label>
+          <br>
+          <input type="checkbox" id="other-pets" name="pets" value="other-pets">
+          <label for="other-pets">Other</label>
+        </fieldset>
+        <br>
+        <fieldset>
+          <legend>Send Me A Note</legend>
+          <label for="message">Your Message:</label>
+          <br>
+          <textarea id="message" name="message" rows="10" cols="30" placeholder="Type your message here"></textarea>
+        </fieldset>
+        <br>
+        <button type="submit">Submit</button>
+        <button type="submit" formaction="https://httpbin.org/post" formmethod="post">Post</button>
+        <button type="reset">Reset</button>
+      </form>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; Mohammad Rizny 2026.</p>
+  </footer>
+</body>
+
+</html>
